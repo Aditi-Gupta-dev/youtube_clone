@@ -7,6 +7,9 @@
     scroll-behavior: smooth;
 
   }
+  .alert{
+    display: none;
+  }
   body{
     font-size: 62.25%;
     background: #fff;
@@ -150,8 +153,7 @@
     display:flex;
     margin-left: 4rem;; 
     flex-wrap: wrap;
-    gap:1rem;
-    /* border:2px solid green; */
+    gap:auto;
     
   }
   .profile-items i{
@@ -418,3 +420,44 @@
 
 }
 
+@media(max-width:950px){
+  
+  .profile-items,.searchbar{
+    display:none;
+   
+  }
+  
+}
+
+@media(max-width:769px){
+  
+  .profile-items,.searchbar{
+    display:none;
+   
+  }
+  
+
+}
+@media(max-width:500px){
+  .profile-items,.searchbar{
+    display:none;
+   
+  }
+ 
+}
+@media(max-width:412px){
+  .profile-items,.searchbar{
+    display:none;
+   
+  }
+}
+
+@media(max-width:281px){
+  .navbar,.body-container,.video-container,.content-card{
+    display: none;
+  }
+  
+  body .alert{
+    display:block;
+  }
+}
